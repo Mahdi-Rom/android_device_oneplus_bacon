@@ -16,5 +16,8 @@
 
 <resources>
     <!-- Whether device has hardware buttons -->
-    <bool name="config_has_hardware_buttons">true</bool> 
+    <bool name="config_has_hardware_buttons">true</bool>
+
+    <!-- LED Flashlight -->
+    <bool name="has_led_flash">true</bool>
 </resources>
