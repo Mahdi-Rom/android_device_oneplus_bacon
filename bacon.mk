@@ -72,3 +72,7 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
     libnamparser
+
+# Required Mahdi packages
+PRODUCT_PACKAGES += \
+    BluetoothExt
