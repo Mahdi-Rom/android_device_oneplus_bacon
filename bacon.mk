@@ -44,6 +44,17 @@ PRODUCT_PACKAGES += \
     nfc_nci.bacon \
     com.android.nfc_extras
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
+# Caf bluetooth package
+PRODUCT_PACKAGES += \
+    BluetoothExt
+
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
@@ -65,14 +76,3 @@ endif
 
 # Inherit from msm8974-common
 $(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
-
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
-    libnamparser
-
-# Required Mahdi packages
-PRODUCT_PACKAGES += \
-    BluetoothExt
